@@ -96,11 +96,7 @@ GARCH(p,q) model is therefore implemented to better fit the data. Now we observe
 residual plots given below which confirms a cluster of volatility. Then we plot the ACF and PACF of
 the squared residuals to estimate the parameters of the GARCH model.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![garch-resi](https://user-images.githubusercontent.com/40643158/212630219-20b88bb3-b1a7-4277-bd57-21b0f9a66994.png)
 
 By observing the ACF and PACF of the squared residuals, we infer that there is no significant
 correlation in the PACF and in ACF there is only only one significant lag after which it drops and
@@ -117,7 +113,6 @@ are all greater than 0.05 indicating that the parameters are not significant. In
 residuals is different from zero. The model thus poorly represents the residuals.
 Below is the 95% Confidence Interval of the ARIMA(0,1,2)-GARCH(0,2) model.
 
-![garch-resi](https://user-images.githubusercontent.com/40643158/212630219-20b88bb3-b1a7-4277-bd57-21b0f9a66994.png)
 
 ![garch-CI](https://user-images.githubusercontent.com/40643158/212630328-7174ea28-948c-402f-b784-ee77f8637cc3.png)
 
