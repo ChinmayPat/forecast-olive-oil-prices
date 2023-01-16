@@ -79,18 +79,16 @@ seems to fairly follow the line except for the points at the tail of the line. B
 safely assume that this set of data is normally distributed. Next, we confirm the Normality of the model
 by performing the Shapiro-Wilks test. The result of the Shapiro-Wilks test is given below where the pvalue is 0.04485 indicating that the residuals do not follow a normal distribution rejecting normality.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![sd-residual](https://user-images.githubusercontent.com/40643158/212630049-aef93c0a-0169-48a8-8b9f-af8ce389650a.png)
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![qq](https://user-images.githubusercontent.com/40643158/212630077-85685c94-e99c-49f4-9935-e3e6a308db56.png)
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![s-w-test](https://user-images.githubusercontent.com/40643158/212630133-bc701265-8485-413a-ad2f-53b77101c8b0.png)
 
 Below is the histogram of the distribution of the residuals clearly indicating that the residuals are not
 normally distributed.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![hist](https://user-images.githubusercontent.com/40643158/212630166-7b5c3fe0-a470-4fee-9d62-6512d21bd270.png)
 
 ## V. GARCH Model Implementation
 As there is a slight indication of volatility in the residuals of the fitted ARIMA(0,1,2) model, a
@@ -119,13 +117,15 @@ are all greater than 0.05 indicating that the parameters are not significant. In
 residuals is different from zero. The model thus poorly represents the residuals.
 Below is the 95% Confidence Interval of the ARIMA(0,1,2)-GARCH(0,2) model.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![garch-resi](https://user-images.githubusercontent.com/40643158/212630219-20b88bb3-b1a7-4277-bd57-21b0f9a66994.png)
+
+![garch-CI](https://user-images.githubusercontent.com/40643158/212630328-7174ea28-948c-402f-b784-ee77f8637cc3.png)
 
 VI. Prediction
 After residual analysis and testing the goodness of the fitted model we then forecast the future global
 price of olive oil. Below is the prediction plot of the next 5 years of olive oil price.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![forecast](https://user-images.githubusercontent.com/40643158/212630354-965c4c1d-062c-48d9-8597-3ab3c311e043.png)
 
 # Conclusion
 The model did not accurately represent the data as the dataset had very few samples. The 95%
