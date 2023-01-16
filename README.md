@@ -7,7 +7,7 @@ https://fred.stlouisfed.org/series/POLVOILUSDA. The dataset has 31 samples (rows
 (columns). The two columns are Date and Price of Olive oil. The Date column is yearly starting from
 1990 to 2020. There are no missing values and no outliers as shown by the box-plot diagram below.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![plot](./img-oliveoil/outlier.png)
 
 As the dataset was in a dataframe, it is converted in a time series format in order to perform a time
 series decision process called Box-Jenkins and forecast future prices. Below is the graph of global price
